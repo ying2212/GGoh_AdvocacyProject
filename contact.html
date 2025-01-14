@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us - NextGenDaily</title>
+    <style>
+        body {
+            background-color: #F9EEF7;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding-bottom: 200px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #622B2B;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: #e086c2;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #432038;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        a {
+            color: #e086c2;
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            list-style: none;
+            overflow: hidden; 
+            position: fixed; 
+            top: 0;
+            width: 100%; 
+            margin-bottom: 60px; 
+        }
+
+        .navbar ul li {
+            float: left; 
+            margin: 10px;
+        }
+
+        .navbar ul li a {
+            font-family: Arial;
+            color: black;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbar ul li a:hover {
+            font-weight: bold; 
+            color: rgb(199, 108, 153); 
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://theinfluenceagency.com/blog/gen-z-activists-changing-the-world/" target="_blank">Impact</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <h1>Contact Us</h1>
+
+    <div class="container">
+        <div class="contact-form">
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <p>For more information, you can reach us at:</p>
+            <p>Email: <a href="mailto:gohguanying@gmail.com">info@nextgendaily.com</a></p>
+            <p>Phone: +123-456-7890</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

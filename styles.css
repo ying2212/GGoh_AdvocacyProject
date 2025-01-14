@@ -1,0 +1,294 @@
+/* Default Styles */
+body {
+    background-color: #F9EEF7; /* Light background */
+    color: #7D0541; /* Default text color */
+    font-family: Arial, sans-serif;
+    padding-top:50px;
+}
+
+/* Feature default light style*/
+.navbar ul {
+    list-style: none;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto; 
+}
+
+.navbar ul li {
+    float: left; 
+    margin: 10px;
+}
+
+.navbar ul li a {
+    font-family: Arial;
+    color: rgb(78, 12, 25);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar button{
+    border:none;    
+    padding: 50px;
+}
+.navbar button:hover{
+    transform: translateY(-3px); 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    padding: 12px 24px;
+}
+
+#theme-button {
+    color: rgb(226, 132, 181);
+    border-radius:5px;
+    padding:5px;
+    background-color: #7D0541;
+}
+
+#theme-button:hover{
+    transition: 0.7s;
+    color:#f0e2f3;
+}
+
+.revealable {
+    position: relative; 
+    transform: translateY(150px); 
+    opacity: 0; 
+    transition: all 2s ease; 
+}
+
+.revealable.active {
+    transform: translateY(0); 
+    opacity: 1;
+}
+
+.slogan-container {
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.slogan-text {
+    font-family: 'Cursive';
+    font-size: xxx-large;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 5px rgba(129, 0, 0, 0.2); 
+    font-weight: bold; 
+    animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(80px); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    
+}
+
+.flex-item {
+    background: white;
+    color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center; 
+    font-size: 14px;
+    background: linear-gradient(to bottom, rgba(249, 238, 247, 0.8), rgba(241, 250, 140, 0.6)); /* Gradient with transparency */
+}
+
+.footer a {
+    color:#a06f91;
+    text-decoration: none; 
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color:#7D0541;
+    text-decoration: underline;
+}
+
+/* Petition Section */
+.petition {
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f1f7;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 150px;
+}
+
+.petition h2 {
+    color: #622b2b;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.petition-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+    width: 100%;
+}
+
+.petition-para {
+    width: 55%; 
+    padding-right: 10px;
+    color: #b288a9;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.signatures {
+    width: 45%; 
+    padding-right: 10px;
+    color: #622b2b;
+    text-align: left;
+}
+
+#sign-petition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#sign-petition label {
+    font-size:15px;
+    color: #622b2b;
+    margin-bottom: 5px;
+}
+
+#sign-petition input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+}
+
+#sign-now-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #b288a9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sign-now-button:hover {
+    background-color: #a06f91;
+}
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background:pink;
+}
+
+/* Dark Mode - Apply to body and cascade to most elements */
+.dark-mode {
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+.dark-mode .navbar ul {
+    background-color: #222;
+}
+
+.dark-mode .flex-item {
+    background-color: #333;
+    border-color: #555;
+    color:#e0e0e0;
+}
+
+.dark-mode .navbar ul li a ,.dark-mode h3{
+    color: #e0e0e0;
+}
+
+.dark-mode #theme-button {
+    background-color: #444;
+    color: rgb(226, 132, 181);
+    border-color: #666;
+}
+
+.dark-mode .container {
+    background-color: #121212;
+}
+
+.dark-mode .petition{
+    background-color: #37182c;
+}
+
+.dark-mode .footer  {
+    color:#37182c;
+    background: linear-gradient(to bottom, rgba(42, 37, 37, 0.8), rgba(72, 5, 53, 0.6)); /* Gradient with transparency */
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+    display: none; /* hides the modal from view by default*/
+    position: fixed; /* keeps the modal in one place */
+    z-index: 2; /* positions the modal on top of all other elements on the screen */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+    flex-direction: column; /* these flexbox rules center the content on the screen */
+    align-items: center;
+    justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+    background-color: lightsteelblue; /* update the colors and font sizes as you like */
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    display: flex; /* adds flexbox to center all items */
+    justify-content: center;
+    align-items: center;
+}
+
+#thanks-modal-content {
+    width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
